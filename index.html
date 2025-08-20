@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>End to End -Test Case Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .section {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e0e0e0;
+      color: #34495e;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    li {
+      background: #f4f6f8;
+      padding: 12px 16px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    li:hover {
+      background: #e9f2ff;
+      transform: translateY(-3px);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #0077cc;
+      font-size: 15px;
+      display: block;
+    }
+
+    a:hover {
+      color: #005999;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Test Case Dashboard</h1>
+
+  <div class="section">
+    <h2>Arbitrage</h2>
+    <ul>
+      <li><a href="irp.html">IRP Test Cases (Sanity)</a></li>
+      <li><a href="travel.html">Travel Test Cases (Sanity)</a></li>
+      <li><a href="locum.html">Locum Test Cases (Sanity)</a></li>
+      <li><a href="perdiem.html">Per Diem Test Cases (Sanity)</a></li>
+      <li><a href="permanent.html">Permanent Test Cases (Sanity)</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Non-Arbitrage</h2>
+    <ul>
+      <li><a href="irpNonArbit.html">IRP Test Cases (Sanity)</a></li>
+      <li><a href="travelNonArbit.html">Travel Test Cases (Sanity)</a></li>
+      <li><a href="locumNonArbit.html">Locum Test Cases (Sanity)</a></li>
+      <li><a href="perdiemNonArbit.html">Per Diem Test Cases (Sanity)</a></li>
+      <li><a href="permanentNonArbit.html">Permanent Test Cases (Sanity)</a></li>
+    </ul>
+  </div>
+</body>
+</html>
