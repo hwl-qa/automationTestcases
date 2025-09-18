@@ -6,7 +6,8 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f8f9fa;
+      background: url("agents.png") no-repeat center center fixed;
+      background-size: cover;
       margin: 0;
       padding: 20px;
       color: #333;
@@ -70,11 +71,17 @@
   </style>
 </head>
 <body>
-  <h1>📊 Test Case Dashboard</h1>
+   <h1 style="color: red;">📊 Test Case Dashboard</h1>
 
   <div class="section">
-    <h2>Arbitrage</h2>
+    <h2 style="color: teal;">Automation Status</h2>
     <ul>
+	<li><a href="auto.html">Overall Automation Dashboard</a></li>
+    </ul>
+	
+    <h2 style="color: teal;">Arbitrage Automated Testcases</h2>
+    <ul>
+	
       <li><a href="irp.html">IRP Test Cases (Sanity)</a></li>
       <li><a href="travel.html">Travel Test Cases (Sanity)</a></li>
       <li><a href="locum.html">Locum Test Cases (Sanity)</a></li>
@@ -84,7 +91,7 @@
   </div>
 
   <div class="section">
-    <h2>Non-Arbitrage</h2>
+    <h2 style="color: teal;">Non-Arbitrage Automated Testcases</h2>
     <ul>
       <li><a href="irpNonArbit.html">IRP Test Cases (Sanity)</a></li>
       <li><a href="travelNonArbit.html">Travel Test Cases (Sanity)</a></li>
@@ -92,6 +99,19 @@
       <li><a href="perdiemNonArbit.html">Per Diem Test Cases (Sanity)</a></li>
       <li><a href="permanentNonArbit.html">Permanent Test Cases (Sanity)</a></li>
     </ul>
+  </div>	
+  <div class="section">
+	<h2 style="color: teal;">Arbitrage Regression Automated Testcases</h2>
+    <ul>
+	<li><a href="auto.html">Arbitrage Regression Testcases</a></li>
+	
+    </ul>
+	</div>
+	 <div class="section">
+	<h2 style="color: teal;">Non Arbitrage Regression Automated Testcases</h2>
+    <ul>
+	<li><a href="auto.html">Non Arbitrage Regression </a></li>
+	</ul>
   </div>
 </body>
 </html>
