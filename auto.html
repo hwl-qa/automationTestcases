@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QA Automation Monthly Status</title>
+  <style>
+	 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: url("agents.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #1e3c72, #2a5298); /* blue gradient */
+  color: white;
+  height: 100vh;
+  position: fixed;
+  padding: 20px 0;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 20px;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.1);
+  border-left: 4px solid #00d4ff;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px;
+  padding: 40px;
+  flex: 1;
+  background: rgba(255,255,255,0.9); /* semi-transparent white */
+  min-height: 100vh;
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Section Headings */
+h3 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+table, th, td {
+  border: none;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.report-link {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.report-link:hover {
+  text-decoration: underline;
+  color: #00d4ff;
+}
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>QA Dashboard</h2>
+    <a href="#overall-status">1. Overall Automation Status</a>
+    <a href="#non-arbitrage-e2e">2. Non Arbitrage E2E Suite</a>
+    <a href="#arbitrage-e2e">3. Arbitrage E2E Suite</a>
+    <a href="#prod-e2e">4. Prod E2E Suite</a>
+    <a href="#non-arbitrage-regression">5. Non Arbitrage Regression Suite</a>
+    <a href="#arbitrage-regression">6. Arbitrage Regression Suite</a>
+  </div>
+
+  <div class="main-content">
+
+    <!-- Section 1: Overall Status -->
+    <section id="overall-status">
+      <h3>1. Overall Automation Status</h3>
+      <table>
+        <tr>
+          <th>Suite Name</th>
+          <th>Total Tests</th>
+          <th>Passed</th>
+          <th>Failed</th>
+          <th>Skipped</th>
+          <th>Pass %</th>
+          <th>Report</th>
+        </tr>
+        <tr>
+          <td>Non Arbitrage E2E</td>
+          <td>43</td>
+          <td>43</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100%</td>
+          <td><a href="reports/non-arbitrage-e2e.html" class="report-link" target="_blank">View Report</a></td>
+        </tr>
+        <tr>
+          <td>Arbitrage E2E</td>
+          <td>34</td>
+          <td>34</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100.0%</td>
+          <td><a href="reports/arbitrage-e2e.html" class="report-link" target="_blank">View Report</a></td>
+        </tr>
+        <tr>
+          <td>Prod E2E</td>
+          <td>24</td>
+          <td>24</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100%</td>
+          <td><a href="reports/prod-e2e.html" class="report-link" target="_blank">View Report</a></td>
+        </tr>
+        <tr>
+          <td>Non Arbitrage Regression</td>
+          <td>34</td>
+          <td>34</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100.0%</td>
+          <td><a href="reports/non-arbitrage-regression.html" class="report-link" target="_blank">View Report</a></td>
+        </tr>
+        <tr>
+          <td>Arbitrage Regression</td>
+          <td>36</td>
+          <td>36</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100%</td>
+          <td><a href="reports/arbitrage-regression.html" class="report-link" target="_blank">View Report</a></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="non-arbitrage-e2e">
+      <h3>2. Non Arbitrage E2E Suite</h3>
+      <table>
+        <tr><th>Metric</th><th>Value</th></tr>
+        <tr><td>Total Test Cases</td><td>43</td></tr>
+        <tr><td>Passed</td><td>43</td></tr>
+        <tr><td>Failed</td><td>0</td></tr>
+        <tr><td>Skipped</td><td>0</td></tr>
+        <tr><td>Pass Percentage</td><td>100.00%</td></tr>
+        <tr><td>Execution Report</td><td><a href="reports/non-arbitrage-e2e.html" class="report-link" target="_blank">Open Report</a></td></tr>
+      </table>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="arbitrage-e2e">
+      <h3>3. Arbitrage E2E Suite</h3>
+      <table>
+        <tr><th>Metric</th><th>Value</th></tr>
+        <tr><td>Total Test Cases</td><td>34</td></tr>
+        <tr><td>Passed</td><td>34</td></tr>
+        <tr><td>Failed</td><td>0</td></tr>
+        <tr><td>Skipped</td><td>0</td></tr>
+        <tr><td>Pass Percentage</td><td>100.0%</td></tr>
+        <tr><td>Execution Report</td><td><a href="reports/arbitrage-e2e.html" class="report-link" target="_blank">Open Report</a></td></tr>
+      </table>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="prod-e2e">
+      <h3>4. Prod E2E Suite</h3>
+      <table>
+        <tr><th>Metric</th><th>Value</th></tr>
+        <tr><td>Total Test Cases</td><td>12</td></tr>
+        <tr><td>Passed</td><td>12</td></tr>
+        <tr><td>Failed</td><td>0</td></tr>
+        <tr><td>Skipped</td><td>0</td></tr>
+        <tr><td>Pass Percentage</td><td>100.00%</td></tr>
+        <tr><td>Execution Report</td><td><a href="reports/prod-e2e.html" class="report-link" target="_blank">Open Report</a></td></tr>
+      </table>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="non-arbitrage-regression">
+      <h3>5. Non Arbitrage Regression Suite</h3>
+      <table>
+        <tr><th>Metric</th><th>Value</th></tr>
+        <tr><td>Total Test Cases</td><td>34</td></tr>
+        <tr><td>Passed</td><td>34</td></tr>
+        <tr><td>Failed</td><td>0</td></tr>
+        <tr><td>Skipped</td><td>0</td></tr>
+        <tr><td>Pass Percentage</td><td>100.0%</td></tr>
+        <tr><td>Execution Report</td><td><a href="reports/non-arbitrage-regression.html" class="report-link" target="_blank">Open Report</a></td></tr>
+      </table>
+    </section>
+
+    <!-- Section 6 -->
+    <section id="arbitrage-regression">
+      <h3>6. Arbitrage Regression Suite</h3>
+      <table>
+        <tr><th>Metric</th><th>Value</th></tr>
+        <tr><td>Total Test Cases</td><td>36</td></tr>
+        <tr><td>Passed</td><td>36</td></tr>
+        <tr><td>Failed</td><td>0</td></tr>
+        <tr><td>Skipped</td><td>0</td></tr>
+        <tr><td>Pass Percentage</td><td>100.00%</td></tr>
+        <tr><td>Execution Report</td><td><a href="reports/arbitrage-regression.html" class="report-link" target="_blank">Open Report</a></td></tr>
+      </table>
+    </section>
+
+  </div>
+
+</body>
+</html>
